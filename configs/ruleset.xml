@@ -5,20 +5,11 @@
 	The rulesets we want to use in pmd. For a detailed description of pmd rulesets: http://pmd.sourceforge.net/rules/index.html
   </description>
 
-  <!--
-  <rule ref="rulesets/java/basic.xml/ForLoopShouldBeWhileLoop">					<priority>5</priority></rule>
-  -->
-
-  <rule ref="rulesets/java/basic.xml/BooleanInstantiation">						<priority>5</priority></rule>
-
-  <!--
-
   <rule ref="rulesets/java/basic.xml/BooleanInstantiation">						<priority>5</priority></rule>
   <rule ref="rulesets/java/basic.xml/CollapsibleIfStatements">					<priority>5</priority></rule>
   <rule ref="rulesets/java/basic.xml/DoubleCheckedLocking">						<priority>5</priority></rule>
   <rule ref="rulesets/java/basic.xml/EmptyCatchBlock">							<priority>1</priority></rule>
   <rule ref="rulesets/java/basic.xml/EmptyFinallyBlock">							<priority>5</priority></rule>
-  <rule ref="rulesets/java/basic.xml/EmptyIfStmt">								<priority>1</priority></rule>
   <rule ref="rulesets/java/basic.xml/EmptyStatementNotInLoop">					<priority>5</priority></rule>
   <rule ref="rulesets/java/basic.xml/EmptyStaticInitializer">					<priority>5</priority></rule>
   <rule ref="rulesets/java/basic.xml/EmptySwitchStatements">						<priority>5</priority></rule>
@@ -73,24 +64,5 @@
   <rule ref="rulesets/java/unusedcode.xml/UnusedLocalVariable">					<priority>1</priority></rule>
   <rule ref="rulesets/java/unusedcode.xml/UnusedPrivateField">					<priority>1</priority></rule>
   <rule ref="rulesets/java/unusedcode.xml/UnusedPrivateMethod">					<priority>1</priority></rule>
-  <rule ref="rulesets/java/unusedcode.xml/UnusedFormalParameter">                <priority>1</priority></rule>
-    <rule name="DontImportWild" message="Please no wild card imports" class="net.sourceforge.pmd.rules.XPathRule">
-    <description>We don't take kindly to imports such as java.net.* round these parts</description>
-    <priority>1</priority>
-    <properties>
-      <property name="xpath">
-        <value>
-          <![CDATA[/ImportDeclaration[@PackageName=@ImportedName]]]>
-        </value>
-      </property>
-    </properties>
-    <example>
-    <![CDATA[
-    	import java.net.*; //is bad
-    	import java.net.URL; //is better
-    ]]>
-    </example>
-  </rule>
 
--->
   </ruleset>
